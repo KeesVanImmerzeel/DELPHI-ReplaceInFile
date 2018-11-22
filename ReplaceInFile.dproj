@@ -40,9 +40,7 @@
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
-        <DCC_ExeOutput>C:\dexetpu</DCC_ExeOutput>
         <DCC_Alignment>1</DCC_Alignment>
-        <DCC_DcuOutput>C:\dexetpu</DCC_DcuOutput>
         <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;$(DCC_Namespace)</DCC_Namespace>
         <DCC_DebugInformation>1</DCC_DebugInformation>
         <VerInfo_Locale>1043</VerInfo_Locale>
@@ -90,12 +88,8 @@
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
         <VerInfo_Locale>1033</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
-        <DCC_ExeOutput>..\..\dexetpu\$(Platform)\$(Config)</DCC_ExeOutput>
-        <DCC_BplOutput>..\..\dexetpu\$(Platform)\$(Config)</DCC_BplOutput>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <DCC_DcpOutput>..\..\dexetpu\$(Platform)\$(Config)</DCC_DcpOutput>
-        <DCC_UnitSearchPath>..\..\dexetpu\$(Platform)\$(Config)</DCC_UnitSearchPath>
-        <DCC_DcuOutput>..\..\dexetpu\$(Platform)\$(Config)</DCC_DcuOutput>
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <BT_BuildType>Debug</BT_BuildType>
     </PropertyGroup>
@@ -129,9 +123,10 @@
                     <Source Name="MainSource">ReplaceInFile.dpr</Source>
                 </Source>
                 <Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclIntraweb_140_200.bpl">IntraWeb 14.0 Design Package for RAD Studio XE6</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k200.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp200.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k250.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp250.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k250.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp250.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Platforms>
